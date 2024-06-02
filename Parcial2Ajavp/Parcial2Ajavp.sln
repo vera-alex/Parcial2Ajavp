@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CadParcial2Ajavp", "CadParcial2Ajavp\CadParcial2Ajavp.csproj", "{5CA246AF-AB60-4E7E-803E-25370C0D0660}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClnParcial2Ajavp", "ClnParcial2Ajavp\ClnParcial2Ajavp.csproj", "{D2442E37-C7EE-46CB-AEEA-DCA8CA1B547D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5CA246AF-AB60-4E7E-803E-25370C0D0660}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CA246AF-AB60-4E7E-803E-25370C0D0660}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CA246AF-AB60-4E7E-803E-25370C0D0660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2442E37-C7EE-46CB-AEEA-DCA8CA1B547D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2442E37-C7EE-46CB-AEEA-DCA8CA1B547D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2442E37-C7EE-46CB-AEEA-DCA8CA1B547D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2442E37-C7EE-46CB-AEEA-DCA8CA1B547D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
