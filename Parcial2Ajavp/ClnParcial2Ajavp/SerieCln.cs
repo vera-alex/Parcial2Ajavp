@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ClnParcial2Ajavp
 {
-    internal class SerieCln
+    public class SerieCln
     {
         public static int insertar(Serie serie)
         {

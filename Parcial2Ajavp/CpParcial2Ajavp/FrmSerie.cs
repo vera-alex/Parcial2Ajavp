@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CadParcial2Ajavp;
+using ClnParcial2Ajavp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -55,7 +57,7 @@ namespace CpParcial2Ajavp
             int index = dgvLista.CurrentCell.RowIndex;
             int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
             var serie = SerieCln.obtenerUno(id);
-            txtTitulo.Text = serie.codigo;
+            txtTitulo.Text = serie.titulo;
             txtSinopsis.Text = serie.sinopsis;
             txtDirector.Text = serie.director;
             nudEpisodios.Value = serie.episodios;
@@ -127,8 +129,8 @@ namespace CpParcial2Ajavp
                 var serie = new Serie();
                 serie.titulo = txtTitulo.Text.Trim();
                 serie.sinopsis = txtSinopsis.Text.Trim();
-                serie.director = txtDirector.Text;
-                serie.episodios = nudEpisodios.Value;
+                serie.director = txtDirector.Text.Trim();
+                serie.episodios = (int)nudEpisodios.Value;
                 serie.fechaEstreno = dtpFechaEstreno.Value;
 
                 if (esNuevo)
