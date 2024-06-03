@@ -1,0 +1,2 @@
+C:\SIS457\Parcial2Ajavp\Parcial2Ajavp\ClnParcial2Ajavp\obj\Debug\ClnParcial2Ajavp.csproj.AssemblyReference.cache
+C:\SIS457\Parcial2Ajavp\Parcial2Ajavp\ClnParcial2Ajavp\obj\Debug\ClnParcial2Ajavp.csproj.CoreCompileInputs.cache

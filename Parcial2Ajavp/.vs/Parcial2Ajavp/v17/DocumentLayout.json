@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\SIS457\\Parcial2Ajavp\\Parcial2Ajavp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D2442E37-C7EE-46CB-AEEA-DCA8CA1B547D}|ClnParcial2Ajavp\\ClnParcial2Ajavp.csproj|c:\\sis457\\parcial2ajavp\\parcial2ajavp\\clnparcial2ajavp\\seriecln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2442E37-C7EE-46CB-AEEA-DCA8CA1B547D}|ClnParcial2Ajavp\\ClnParcial2Ajavp.csproj|solutionrelative:clnparcial2ajavp\\seriecln.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7080009-F5E7-4224-85C6-96323807D453}|CpParcial2Ajavp\\CpParcial2Ajavp.csproj|C:\\SIS457\\Parcial2Ajavp\\Parcial2Ajavp\\cpparcial2ajavp\\frmserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E7080009-F5E7-4224-85C6-96323807D453}|CpParcial2Ajavp\\CpParcial2Ajavp.csproj|solutionrelative:cpparcial2ajavp\\frmserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7080009-F5E7-4224-85C6-96323807D453}|CpParcial2Ajavp\\CpParcial2Ajavp.csproj|c:\\sis457\\parcial2ajavp\\parcial2ajavp\\cpparcial2ajavp\\frmserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E7080009-F5E7-4224-85C6-96323807D453}|CpParcial2Ajavp\\CpParcial2Ajavp.csproj|solutionrelative:cpparcial2ajavp\\frmserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E7080009-F5E7-4224-85C6-96323807D453}|CpParcial2Ajavp\\CpParcial2Ajavp.csproj|c:\\sis457\\parcial2ajavp\\parcial2ajavp\\cpparcial2ajavp\\frmserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7080009-F5E7-4224-85C6-96323807D453}|CpParcial2Ajavp\\CpParcial2Ajavp.csproj|solutionrelative:cpparcial2ajavp\\frmserie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,24 +18,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SerieCln.cs",
-              "DocumentMoniker": "C:\\SIS457\\Parcial2Ajavp\\Parcial2Ajavp\\ClnParcial2Ajavp\\SerieCln.cs",
-              "RelativeDocumentMoniker": "ClnParcial2Ajavp\\SerieCln.cs",
-              "ToolTip": "C:\\SIS457\\Parcial2Ajavp\\Parcial2Ajavp\\ClnParcial2Ajavp\\SerieCln.cs",
-              "RelativeToolTip": "ClnParcial2Ajavp\\SerieCln.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAMAAAASAAAA",
+              "DocumentIndex": 1,
+              "Title": "FrmSerie.cs",
+              "DocumentMoniker": "C:\\SIS457\\Parcial2Ajavp\\Parcial2Ajavp\\CpParcial2Ajavp\\FrmSerie.cs",
+              "RelativeDocumentMoniker": "CpParcial2Ajavp\\FrmSerie.cs",
+              "ToolTip": "C:\\SIS457\\Parcial2Ajavp\\Parcial2Ajavp\\CpParcial2Ajavp\\FrmSerie.cs",
+              "RelativeToolTip": "CpParcial2Ajavp\\FrmSerie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAALIAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T00:55:05.692Z",
+              "WhenOpened": "2024-06-03T03:51:53.642Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FrmSerie.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\SIS457\\Parcial2Ajavp\\Parcial2Ajavp\\CpParcial2Ajavp\\FrmSerie.cs",
               "RelativeDocumentMoniker": "CpParcial2Ajavp\\FrmSerie.cs",

@@ -1,0 +1,5 @@
+C:\SIS457\Parcial2Ajavp\Parcial2Ajavp\CpParcial2Ajavp\obj\Debug\CpParcial2Ajavp.csproj.AssemblyReference.cache
+C:\SIS457\Parcial2Ajavp\Parcial2Ajavp\CpParcial2Ajavp\obj\Debug\CpParcial2Ajavp.FrmSerie.resources
+C:\SIS457\Parcial2Ajavp\Parcial2Ajavp\CpParcial2Ajavp\obj\Debug\CpParcial2Ajavp.Properties.Resources.resources
+C:\SIS457\Parcial2Ajavp\Parcial2Ajavp\CpParcial2Ajavp\obj\Debug\CpParcial2Ajavp.csproj.GenerateResource.cache
+C:\SIS457\Parcial2Ajavp\Parcial2Ajavp\CpParcial2Ajavp\obj\Debug\CpParcial2Ajavp.csproj.CoreCompileInputs.cache
