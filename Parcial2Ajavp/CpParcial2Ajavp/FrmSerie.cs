@@ -37,6 +37,7 @@ namespace CpParcial2Ajavp
             dgvLista.Columns["director"].HeaderText = "Director";
             dgvLista.Columns["episodios"].HeaderText = "Episodios";
             dgvLista.Columns["fechaEstreno"].HeaderText = "Fecha Estreno";
+            dgvLista.Columns["categoria"].HeaderText = "Categoría";
             btnEditar.Enabled = lista.Count > 0;
             btnEliminar.Enabled = lista.Count > 0;
             if (lista.Count > 0) dgvLista.Rows[0].Cells["titulo"].Selected = true;
@@ -45,23 +46,24 @@ namespace CpParcial2Ajavp
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             esNuevo = true;
-            Size = new Size(860, 486);
+            Size = new Size(860, 650);
             txtTitulo.Focus();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
             esNuevo = false;
-            Size = new Size(860, 486);
+            Size = new Size(860, 650);
 
             int index = dgvLista.CurrentCell.RowIndex;
             int id = Convert.ToInt32(dgvLista.Rows[index].Cells["id"].Value);
             var serie = SerieCln.obtenerUno(id);
             txtTitulo.Text = serie.titulo;
-            txtSinopsis.Text = serie.sinopsis;
+            rtbSinopsis.Text = serie.sinopsis;
             txtDirector.Text = serie.director;
             nudEpisodios.Value = serie.episodios;
             dtpFechaEstreno.Value = serie.fechaEstreno;
+            cbbCategoria.Text = serie.categoria;
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -84,20 +86,21 @@ namespace CpParcial2Ajavp
         {
             bool esValido = true;
             erpTitulo.SetError(txtTitulo, "");
-            erpSinopsis.SetError(txtSinopsis, "");
+            erpSinopsis.SetError(rtbSinopsis, "");
             erpDirector.SetError(txtDirector, "");
             erpEpisodios.SetError(nudEpisodios, "");
             erpFechaEstreno.SetError(dtpFechaEstreno, "");
+            erpCategoria.SetError(cbbCategoria, "");
 
             if (string.IsNullOrEmpty(txtTitulo.Text))
             {
                 esValido = false;
                 erpTitulo.SetError(txtTitulo, "El campo Título es obligatorio");
             }
-            if (string.IsNullOrEmpty(txtSinopsis.Text))
+            if (string.IsNullOrEmpty(rtbSinopsis.Text))
             {
                 esValido = false;
-                erpSinopsis.SetError(txtSinopsis, "El campo Sinopsis es obligatorio");
+                erpSinopsis.SetError(rtbSinopsis, "El campo Sinopsis es obligatorio");
             }
             if (string.IsNullOrEmpty(txtDirector.Text))
             {
@@ -109,7 +112,7 @@ namespace CpParcial2Ajavp
                 esValido = false;
                 erpEpisodios.SetError(nudEpisodios, "El campo Episodios es obligatorio");
             }
-            if (nudEpisodios.Value < 0)
+            if (nudEpisodios.Value <= 0)
             {
                 esValido = false;
                 erpEpisodios.SetError(nudEpisodios, "El campo Episodios debe ser mayor a Cero");
@@ -118,6 +121,11 @@ namespace CpParcial2Ajavp
             {
                 esValido = false;
                 erpFechaEstreno.SetError(dtpFechaEstreno, "El campo Fecha de Estreno es obligatorio");
+            }
+            if (string.IsNullOrEmpty(cbbCategoria.Text))
+            {
+                esValido = false;
+                erpCategoria.SetError(cbbCategoria, "El campo Categoría de Estreno es obligatorio");
             }
             return esValido;
         }
@@ -128,10 +136,11 @@ namespace CpParcial2Ajavp
             {
                 var serie = new Serie();
                 serie.titulo = txtTitulo.Text.Trim();
-                serie.sinopsis = txtSinopsis.Text.Trim();
+                serie.sinopsis = rtbSinopsis.Text.Trim();
                 serie.director = txtDirector.Text.Trim();
                 serie.episodios = (int)nudEpisodios.Value;
                 serie.fechaEstreno = dtpFechaEstreno.Value;
+                serie.categoria = cbbCategoria.Text;
 
                 if (esNuevo)
                 {
@@ -154,10 +163,11 @@ namespace CpParcial2Ajavp
         private void limpiar()
         {
             txtTitulo.Text = string.Empty;
-            txtSinopsis.Text = string.Empty;
+            rtbSinopsis.Text = string.Empty;
             txtDirector.Text = string.Empty;
             nudEpisodios.Value = 0;
             dtpFechaEstreno.Value = dtpFechaEstreno.MinDate;
+            cbbCategoria.SelectedIndex = -1;
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

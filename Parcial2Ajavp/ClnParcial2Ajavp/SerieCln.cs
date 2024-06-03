@@ -29,6 +29,7 @@ namespace ClnParcial2Ajavp
                 existente.director = serie.director;
                 existente.episodios = serie.episodios;
                 existente.fechaEstreno = serie.fechaEstreno;
+                existente.categoria = serie.categoria;
                 return context.SaveChanges();
             }
         }

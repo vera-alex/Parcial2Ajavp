@@ -13,8 +13,9 @@
           <Property Name="titulo" Type="varchar" MaxLength="250" Nullable="false" />
           <Property Name="sinopsis" Type="varchar" MaxLength="5000" Nullable="false" />
           <Property Name="director" Type="varchar" MaxLength="100" Nullable="false" />
-          <Property Name="episodios" Type="int" Nullable="false" />
+          <Property Name="episodios" Type="bigint" Nullable="false" />
           <Property Name="fechaEstreno" Type="datetime" Nullable="false" />
+          <Property Name="categoria" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="estado" Type="smallint" Nullable="false" />
         </EntityType>
         <Function Name="paSerieListar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
@@ -36,8 +37,9 @@
           <Property Name="titulo" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="sinopsis" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="director" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="episodios" Type="Int32" Nullable="false" />
+          <Property Name="episodios" Type="Int64" Nullable="false" />
           <Property Name="fechaEstreno" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="categoria" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="estado" Type="Int16" Nullable="false" />
         </EntityType>
         <EntityContainer Name="Parcial2AjavpEntities" annotation:LazyLoadingEnabled="true">
@@ -51,8 +53,9 @@
           <Property Type="String" Name="titulo" Nullable="false" MaxLength="250" />
           <Property Type="String" Name="sinopsis" Nullable="false" MaxLength="5000" />
           <Property Type="String" Name="director" Nullable="false" MaxLength="100" />
-          <Property Type="Int32" Name="episodios" Nullable="false" />
+          <Property Type="Int64" Name="episodios" Nullable="false" />
           <Property Type="DateTime" Name="fechaEstreno" Nullable="false" Precision="23" />
+          <Property Type="String" Name="categoria" Nullable="false" MaxLength="50" />
           <Property Type="Int16" Name="estado" Nullable="false" />
         </ComplexType>
       </Schema>
@@ -70,6 +73,7 @@
                 <ScalarProperty Name="director" ColumnName="director" />
                 <ScalarProperty Name="episodios" ColumnName="episodios" />
                 <ScalarProperty Name="fechaEstreno" ColumnName="fechaEstreno" />
+                <ScalarProperty Name="categoria" ColumnName="categoria" />
                 <ScalarProperty Name="estado" ColumnName="estado" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -83,6 +87,7 @@
                 <ScalarProperty Name="director" ColumnName="director" />
                 <ScalarProperty Name="episodios" ColumnName="episodios" />
                 <ScalarProperty Name="fechaEstreno" ColumnName="fechaEstreno" />
+                <ScalarProperty Name="categoria" ColumnName="categoria" />
                 <ScalarProperty Name="estado" ColumnName="estado" />
               </ComplexTypeMapping>
             </ResultMapping>

@@ -17,8 +17,9 @@ namespace CadParcial2Ajavp
         public string titulo { get; set; }
         public string sinopsis { get; set; }
         public string director { get; set; }
-        public int episodios { get; set; }
+        public long episodios { get; set; }
         public System.DateTime fechaEstreno { get; set; }
+        public string categoria { get; set; }
         public short estado { get; set; }
     }
 }
